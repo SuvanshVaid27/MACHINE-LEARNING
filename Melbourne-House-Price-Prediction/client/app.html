@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Melbourne House Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+
+  <h2>Distance from CBD</h2>
+    <input class="area"  type="text" id="uiDistance" class="floatLabel" name="" value="3">
+
+  <h2>Number of bedrooms</h2>
+    <input class="area"  type="text" id="uiRooms" class="floatLabel" name="" value="3">
+
+  <h2>Type of Property</h2>
+    <div>
+    <select class="location" name="" id="uiTypes">
+      <option value="" disabled="disabled" selected="selected">Choose a type</option>
+    </select>
+  </div>
+
+
+  <h2>Location</h2>
+  	<div>
+    <select class="location" name="" id="uiLocations">
+      <option value="" disabled="disabled" selected="selected">Choose a Suburb</option>
+    </select>
+  </div>
+
+  <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+
+</form>
+
+
+</body>
+</html>
